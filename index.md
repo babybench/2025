@@ -21,7 +21,7 @@ The first **BabyBench Competition** will take place at the ***IEEE* ICDL 2025 Co
 
 ---
 
-<iframe width="640" height="480" src="../static/videos/selftouch.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="static/videos/selftouch.mp4" frameborder="0" allowfullscreen></iframe>
 <!--<iframe width="640" height="480" src="../../static/videos/handregard.mp4" frameborder="0" allowfullscreen></iframe>-->
 
 ---
