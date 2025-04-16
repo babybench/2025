@@ -1,0 +1,21 @@
+title: BabyBench 2025 Competition
+description: BabyBench 2025 Competition at IEEE ICDL in Prague
+theme: just-the-docs
+
+url: https://babybench.github.io/babybench2025
+
+logo: "static/images/babybench_long.png"
+favicon_ico: "static/images/babybench.ico"
+
+aux_links:
+  Competition Starter Kit: https://github.com/babybench/babybench2025
+  BabyBench Project: https://babybench.github.io
+aux_links_new_tab: true
+
+footer_content: "Copyright &copy; 2025 Francisco M. López. Distributed by an <a href=\"https://github.com/babybench/babybench2025/tree/main/LICENSE.txt\">MIT license.</a>"
+
+nav_enabled: true
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
