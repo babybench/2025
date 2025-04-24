@@ -5,15 +5,13 @@ nav_order: 3
 ---
 
 # Getting started
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
-
 ## Environments
 
 

@@ -5,13 +5,12 @@ nav_order: 5
 ---
 
 # Competition guidelines
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
 
 ## Judges

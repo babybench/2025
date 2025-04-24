@@ -5,13 +5,12 @@ nav_order: 1
 ---
 
 # About
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
 
 ## Motivation

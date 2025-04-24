@@ -5,14 +5,14 @@ nav_order: 99
 ---
 
 # FAQ
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
+
 
 ## What is BabyBench?
 

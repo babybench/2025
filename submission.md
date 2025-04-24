@@ -5,13 +5,12 @@ nav_order: 4
 ---
 
 # Prepare a submission
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
 
 ## Training

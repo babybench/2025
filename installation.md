@@ -5,13 +5,12 @@ nav_order: 2
 ---
 
 # Installation
-
 {: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
 
-- TOC
+1. TOC
 {:toc}
 
 ## Option 1: Local installation
