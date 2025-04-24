@@ -12,4 +12,4 @@ nav_order: 98
 {: .no_toc .text-delta }
 
 - TOC
-  {:toc}
+{:toc}

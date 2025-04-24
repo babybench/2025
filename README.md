@@ -1,5 +1,7 @@
 # BabyBench 2025 Competition website
 
+The website is available [here](https://babybench.github.io/BabyBench2025).
+
 The project code is available [here](https://github.com/babybench/BabyBench2025_Starter_Kit).
 
 The template for the website is available [here](https://just-the-docs.github.io/just-the-docs/).

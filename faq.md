@@ -12,7 +12,7 @@ nav_order: 99
 {: .no_toc .text-delta }
 
 - TOC
-  {:toc}
+{:toc}
 
 ## What is BabyBench?
 

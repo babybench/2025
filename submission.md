@@ -12,7 +12,7 @@ nav_order: 4
 {: .no_toc .text-delta }
 
 - TOC
-  {:toc}
+{:toc}
 
 ## Training
 
