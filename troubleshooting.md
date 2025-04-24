@@ -1,16 +1,16 @@
 ---
-title: Configurations
+title: Troubleshooting
 layout: default
-parent: About
-nav_order : 5
+nav_order: 98
 ---
 
-# Target behaviors
+# Troubleshooting
+
 {: .no_toc }
 
 ## Table of Contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
-
+   {:toc}

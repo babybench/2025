@@ -25,3 +25,11 @@ The first **BabyBench Competition** will take place at the ***IEEE* ICDL 2025 Co
 <!--<iframe width="640" height="480" src="../../static/videos/handregard.mp4" frameborder="0" allowfullscreen></iframe>-->
 
 ---
+
+```
+@misc{lopez2025babybench,
+      title={BabyBench: A Multimodal Benchmark of Infant Behaviors for Developmental AI},
+      author={Francisco M. López and Valentin Marcel and Xavier Hinaut and Jochen Triesch and Matej Hoffmann},
+      year={2025},
+}
+```
