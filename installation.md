@@ -29,7 +29,7 @@ conda activate babybench
 {: .no_toc }
 
 ```
-git clone https://github.com/babybench/BabyBench2025_Starter_Kit.git
+git clone https://github.com/babybench/2025_Starter_Kit.git
 cd BabyBench
 ```
 

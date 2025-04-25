@@ -12,16 +12,16 @@ nav_order: 3
 
 1. TOC
 {:toc}
-## Environments
 
 
-
-## Configurations
+## Installation
 
 
 
 ## Examples
 
+
+## Configuration files
 
 
 ## Resources

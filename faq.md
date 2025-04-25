@@ -28,7 +28,7 @@ Anyone! Students, researchers, interdisciplinary teams—no matter your backgrou
 
 ## I don't have experience with reinforcement learning, can I still participate?
 
-Absolutely, but training MIMo will require some basic knowledge of reinforcement learning. We recommend reading the [resources section](start/#resources) or heading to the [discussion page on github](https://github.com/babybench/BabyBench2025_Starter_Kit) to connect with others.
+Absolutely, but training MIMo will require some basic knowledge of reinforcement learning. We recommend reading the [resources section](start/#resources) or heading to the [discussion page on github](https://github.com/babybench/2025_Starter_Kit) to connect with others.
 
 ## Are there any baseline models or starter code?
 
@@ -56,5 +56,5 @@ Yes, absolutely. Your BabyBench work can be a great foundation for a contributio
 
 ## More questions?
 
-We’re happy to help! Contact us by [email](mailto:fcomlop@gmail.com) or leave a message in the [discussion page on github](https://github.com/babybench/BabyBench2025_Starter_Kit).
+We’re happy to help! Contact us by [email](mailto:fcomlop@gmail.com) or leave a message in the [discussion page on github](https://github.com/babybench/2025_Starter_Kit).
 

@@ -13,12 +13,17 @@ nav_order: 1
 1. TOC
 {:toc}
 
-## Motivation
-
-## Behaviors
-
-### Self-touch
-
-### Hand regard
-
 ## MIMo
+
+MIMo, the multimodal infant model, is a simulation platform based on the MuJoCo physics engine.
+
+## BabyBench
+
+
+
+## Environments
+
+
+
+## Configurations
+

@@ -13,7 +13,7 @@ nav_order: 5
 1. TOC
 {:toc}
 
-## Judges
+## Evaluation committee
 
 The evaluations will be conducted by a committee of experts in the field of robotics, machine learning, and developmental psychology, invited by the organizers of the competition. The review will be a single-blind process. The experts will [score](#scoring) the submissions and be encouraged to provide constructive feedback to the authors of the submissions. The final decisions on the winners will be made on the basis of the aggregated scores of all the experts.
 
@@ -31,13 +31,13 @@ A minimum score of 1 point in each of the first three criteria (likeness, achiev
 
 The first criterion focuses on how closely the learned behaviors match the expected behaviors. The judges will evaluate videos and logs from 10 episodes with random initial conditions. The evaluation will consider qualitative features, including body trajectories, variability across trials, and resemblance to real infants.
 
-The likeness score will be subjective for each judge. However, authors are encouraged to take a look at the [example videos](../about/behaviors.md) to get a sense of what the expected behaviors should look like.
+The likeness score will be subjective for each judge. However, authors are encouraged to take a look at the [example videos](about/#behaviors) to get a sense of what the expected behaviors should look like. 
 
 ### Achievement of the target behavior (3 points)
 
 Submissions will be evaluated on how well they replicate the learning of the target behavior. The evaluation will be made on the basis of the training logs generated during the training process and any results reported by the authors in the extended abstract.
 
-Running the [evaluation code](../submission/evaluation) will return a preliminary score based on:
+Running the [evaluation code](submission/#evaluation) will return a preliminary score based on:
 
 - the fraction of body parts touched by each hand for the self-touch task,
 
