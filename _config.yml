@@ -3,9 +3,9 @@ description: BabyBench 2025 Competition at IEEE ICDL in Prague
 theme: just-the-docs
 
 url: https://babybench.github.io/2025
+permalink: pretty
 
 logo: "static/images/babybench_long.png"
-favicon_ico: "static/images/favicon.ico"
 
 aux_links:
   Competition Starter Kit: https://github.com/babybench/babybench2025_starter_kit
