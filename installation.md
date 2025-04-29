@@ -29,8 +29,8 @@ conda activate babybench
 {: .no_toc }
 
 ```
-git clone https://github.com/babybench/2025_Starter_Kit.git
-cd BabyBench
+git clone https://github.com/babybench/BabyBench2025_Starter_Kit.git
+cd BabyBench2025_Starter_Kit
 ```
 
 ### Install requirements
@@ -60,13 +60,13 @@ This will run a test to check that the everything is correctly installed.
 
 ## Option 2: Singularity container
 
-Pre-requisites: [Singularity](https://docs.sylabs.io/guides/latest/user-guide/). All software has been tested on Ubuntu 18.04 and 24.04.
+Pre-requisites: [Singularity](https://neuro.debian.net/install_pkg.html?p=singularity-container). All software has been tested on Ubuntu 24.04.
 
-### Create a singularity container
+### Create the singularity container
 {: .no_toc }
 
 ```
-singularity build --fakeroot --sandbox babybench.sif docker://babybench/babybench:latest
+singularity build -F babybench.sif babybench.def
 ```
 
 This will create a singularity container called `babybench.sif` in the current directory.
@@ -75,12 +75,11 @@ This will create a singularity container called `babybench.sif` in the current d
 {: .no_toc }
 
 ```
-singularity exec --bind /home/lopez/Code/babybench.github.io/babybench2025:/babybench2025 babybench.sif python test_installation.py
+singularity run -c -H /home --bind "$PWD/:/home" babybench.sif
 ```
 
 This will run a test to check that the everything is correctly installed.
 
 ## Troubleshooting
 
-
-If you encounter any issues, visit the [troubleshooting page](https://babybench.github.io/babybench2025/wiki/troubleshooting)
+If you encounter any issues, visit the [troubleshooting page](https://babybench.github.io/2025/troubleshooting)

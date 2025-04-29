@@ -20,7 +20,7 @@ BabyBench is a multimodal benchmark of infant behaviors for developmental artifi
 
 ## What is MIMo?
 
-MIMo, the multimodal infant model, is a simulation platform based on the MuJoCo physics engine. You can found out more about MIMo [here](about/#mimo). You can also download and use MIMo for your own experiments [here](https://github.com/trieschlab/MIMo).
+MIMo, the multimodal infant model, is a simulation platform based on the MuJoCo physics engine. You can find out more about MIMo [here](about/#mimo). You can also download and use MIMo for your own experiments [here](https://github.com/trieschlab/MIMo).
 
 ## Who can participate?
 
@@ -37,6 +37,10 @@ Yes! We provide some basic examples with starter code to help you get up and run
 ## Are there restrictions on the algorithms or architectures I can use?
 
 No, but we strongly encourage models that follow the spirit of the competition: unsupervised, self-supervised, or intrinsically motivated learning approaches that aim to recreate or explain developmental behaviors. Take into account that plausibility is one of the [evaluated criteria](competition/#evaluation). Having said that, creativity and interpretability are valued! 
+
+## Can I modify the BabyBench environments?
+
+In short, no. The environments are designed to facilitate the emergence of specific developmental behaviors, and the core challenge of the competition lies in enabling the agent to learn these behaviors autonomously through interaction and experience. The focus of the competition is on the learning algorithms, and winning team will be the one that achieves the best results *given the constraints and limitations of the environments*. However, we understand that some algorithms may **require** modifications to the environment, in which case submissions will need to justify the need for such modifications focusing on the biological plausibility of the learning mechanism.
 
 ## What kind of submission is expected?
 
