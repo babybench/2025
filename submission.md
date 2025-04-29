@@ -32,11 +32,11 @@ Once you have finished training MIMo, you can run an evaluation by modifying the
 
 Before uploading your submission, please make sure to check the following items:
 
-- [-] Extended abstract of up to 2 pages with a clear overview of your approach, including a description of the learning method used and a preview of the results.
+- [x] Extended abstract of up to 2 pages with a clear overview of your approach, including a description of the learning method used and a preview of the results.
 
-- [-] Training log file called `training.pkl` automatically generated during training. Located in the `logs` folder within the directory specified in the `config.yml` file.
+- [x] Training log file called `training.pkl` automatically generated during training. Located in the `logs` folder within the directory specified in the `config.yml` file.
 
-- [-] Trajectory log files called `episode_i.pkl` automatically generated during the evaluation. Located in the `logs` folder within the directory specified in the `config.yml` file.
+- [x] Trajectory log files called `episode_i.pkl` automatically generated during the evaluation. Located in the `logs` folder within the directory specified in the `config.yml` file.
 
 - [ ] (Optionally) Link to the videos of the learned behavior called `episode_i.avi` automatically generated during the evaluation. Located in the `videos` folder within the directory specified in the `config.yml` file. *Note: videos should be uploaded to a personal server or cloud storage.*
 
