@@ -11,8 +11,7 @@ BabyBench is a multimodal benchmark of infant behaviors for developmental artifi
 The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 Conference**](https://icdl2025.fel.cvut.cz/) in Prague! The topic of this first edition will be *how infants discover their own bodies*. Can you help MIMo learn two typical infant behaviors: [**self touch**](about/#self-touch) and [**hand regard**](about/#hand-regard)? 
 
 <span>
-[Getting started](start){: .btn .btn-purple } 
-[Download the code](https://github.com/babybench/babybench2025_starter_kit.git){: .btn }
+[Download the code](https://github.com/babybench/babybench2025_starter_kit.git){: .btn .btn-purple}
 [Make a submission](https://ras.papercept.net/){: .btn }
 </span>
 
