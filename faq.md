@@ -62,3 +62,7 @@ Yes, absolutely. Your BabyBench work can be a great foundation for a contributio
 
 We’re happy to help! Contact us by [email](mailto:fcomlop@gmail.com) or leave a message in the [discussion page on github](https://github.com/babybench/2025_Starter_Kit).
 
+---
+
+### [Download the code](https://github.com/babybench/babybench2025_starter_kit)
+{: .no_toc }

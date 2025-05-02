@@ -13,39 +13,10 @@ nav_order: 3.5
 1. TOC
 {:toc}
 
-## Basic usage
 
-BabyBench uses the standard MIMo interface with the Gymnasium API:
-
-```python
-import gymnasium as gym
-import mimoEnv
-
-env = gym.make("BabyBench-SelfTouch")
-obs, _ = env.reset()
-
-done = False
-while not done:
-    action = select_action(obs)
-    obs, reward, terminated, truncated, info = env.step(action)
-    done = terminated or truncated
-```
-
-Users are **not** expected to modify any of the BabyBench or MIMo code, but rather to write their own training loops using the provided API to interact with the environments. 
 
 ## Configuration
 
-To facilitate the initialization of BabyBench, users can control the environment parameters using a configuration file:
-
-```python
-import yaml
-import babybench.utils as bb_utils
-
-with open('config.yml') as f:
-    config = yaml.safe_load(f)
-
-env = bb_utils.make_env(config)
-```
 
 The list of available parameters that can be defined in the configuration files is the following:
 
@@ -122,3 +93,46 @@ The list of available parameters that can be defined in the configuration files 
 ### Muscle model
 
 ### Positional model
+
+## Evaluation
+
+## File structure
+
+The BabyBench 2025 starter kit contains the following files and folders:
+
+- ``babybench``: a folder with BabyBench auxiliary code
+    - ``build_xml.py``: a script to read configuration files and build MIMo XML files
+    - ``eval.py``: a script with the evaluation class and methods
+    - ``utils.py``: a script with auxiliary functions
+- ``examples``: a folder with starter code examples
+    - ``config_test_installation.yml``: a configuration file for the installation test
+    - ``config_selftouch.yml``: a recommended configuration file for the self-touch behavior
+    - ``config_handregard.yml``: a recommended configuration file for the hand regard behavior
+    - ``random_selftouch.py``: a starter code for a random self-touch policy
+    - ``random_handregard.py``: a starter code for a random hand regard policy
+    - ``intrinsic_motivation_wrapper.py``: a starter code for training a generic policy that uses intrinsic motivations
+    - ``intrinsic_selftouch_count.py``: a starter code for training a self-touch policy to maximize the number of touched sensors
+    - ``intrinsic_handregard_saliency.py``: a starter code for training a hand regard policy to maximize visual saliency
+    - ``goal_based_wrapper.py``: a starter code for training a generic policy that uses goal-based learning
+    - ``goal_selftouch_sensors.py``: a starter code for training a self-touch policy to maximize the number of touched sensors
+    - ``goal_based_handregard.py``: a starter code for training a hand regard policy to maximize visual saliency
+- ``MIMo``: the MIMo repository
+- ``results``: a folder to store the results of the training and evaluations
+    - ``test_installation``: a folder with the results of the installation test (created after running ``test_installation.py``)
+        - ``logs``: a folder with the results of the self-touch training (created after running ``random_selftouch.py``)
+            - ``training.pkl``: the training logs generated during the installation test
+        - ``videos``: a folder with the rendered videos of the self-touch training (created after running ``random_selftouch.py``)
+            - ``test_installation.avi``: the rendered video of the installation test
+        - ``scene.xml``: the MIMo XML file with the installation test
+- ``babybench.def``: a Singularity definition file to build the container
+- ``evaluation.py``: a script to evaluate the performance of a policy
+- ``LICENSE``: the license file
+- ``README.md``: a README file with installation and usage instructions
+- ``requirements.txt``: a list of Python packages required to run the code
+- ``test_installation.py``: a script to test the installation
+
+
+---
+
+### [Next page: Prepare a submission](../submission) 
+{: .no_toc }

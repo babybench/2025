@@ -13,6 +13,13 @@ nav_order: 5
 1. TOC
 {:toc}
 
+## Important dates
+
+- **Submission deadline: August 15, 2025**
+- Finalists announcement: September 1, 2025
+- Winner announcement at ICDL: September 19, 2025
+
+
 ## Evaluation committee
 
 The evaluations will be conducted by a committee of experts in the field of robotics, machine learning, and developmental psychology, invited by the organizers of the competition. The review will be a single-blind process. The experts will [score](#scoring) the submissions and be encouraged to provide constructive feedback to the authors of the submissions. The final decisions on the winners will be made on the basis of the aggregated scores of all the experts.
@@ -89,3 +96,8 @@ Submissions may employ any modeling framework or data modality, but should aim t
 
 To keep the competition simple, we do not require submissions to include the full code used to learn the behaviors. Only the winning team will be expected to provide the code, which will be tested as a verification check before the announcement.
 
+
+---
+
+### [Next page: Troubleshooting](../troubleshooting)
+{: .no_toc }
