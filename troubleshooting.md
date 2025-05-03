@@ -7,6 +7,8 @@ nav_order: 98
 # Troubleshooting
 {: .no_toc }
 
+This page provides solutions to some possible problems when installing and using BabyBench. If you encounter any other problems and can't find a solution here, please [contact us](mailto:fcomlop@gmail.com). Likewise, if you find solutions to problems not listed here, please [let us know](mailto:fcomlop@gmail.com) and we will add them to the page.
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
