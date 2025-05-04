@@ -16,6 +16,7 @@ footer_content: "Copyright &copy; 2025 Francisco M. López. Distributed by an <a
 
 nav_enabled: true
 heading_anchors: true
+nav_external_links_new_tab: true
 
 back_to_top: true
 back_to_top_text: "Back to top"

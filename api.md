@@ -7,94 +7,134 @@ nav_order: 3.5
 # API
 {: .no_toc }
 
+This page describes the BabyBench API for its use in the competition. Details about [MIMo](https://mimo.readthedocs.io/en/latest/), [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html), and [Gymnasium](https://gymnasium.farama.org/api/) are not provided here but can be found in their corresponding documentations.  
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-
-
 ## Configuration
 
+The list of parameters that can be defined in the configuration files is the following:
 
-The list of available parameters that can be defined in the configuration files is the following:
+- `save_dir` (float): The folder where the training logs will be saved. Defaults: `results/test_installation`.
+- `behavior` (float): The behavior to train. Default: `none`. Options: `none`, `self_touch`, `hand_regard`.
+- `scene` (float): The scene to use in the environment. Default: `base`. Options: `base`, `crib`, `cubes`.
+- `max_episode_steps` (int): The maximum number of steps per episode. Default: `1000`.
+- `frame_skip` (int): The number of physics steps to perform between actions. Default: `1`.
+- `render_size` (int): The size of the rendered images. Default: `480`.
+- `save_logs_every` (int): The number of episodes between saving the training logs. Default: `1000`.
+- `proprio_velocity` (bool): Whether to use the joint velocity in the proprioceptive observation. Default: `True`. 
+- `proprio_torque` (bool): Whether to use the joint torques in the proprioceptive observation. Default: `True`.
+- `proprio_limits` (bool): Whether to use the joint limits in the proprioceptive observation. Default: `True`.
+- `proprio_actuation` (bool): Whether to use the joint actuation in the proprioceptive observation. Default: `True`.
+- `vestibular_active` (bool): Whether to use the vestibular module. Default: `True`.
+- `vision_active` (bool): Whether to use the vision module. Default: `True`.
+- `vision_resolution` (int): The resolution of the vision. Default: `64`.
+- `touch_active` (bool): Whether to use the touch module. Default: `True`.
+- `touch_scale` (float): The scale factor for the touch sensors. Default: `1`.
+- `touch_function` (str): The activation function to use for the touch sensors. Default: `normal`. Options: `normal`, `force_vector`, `force_vector_global`.
+- `touch_response` (str): The spread response to use for the touch sensors. Default: `nearest`. Options: `nearest`, `spread_linear`. 
+- `touch_hands` (bool): Whether to use the touch sensors of the hands. Default: `True`.
+- `touch_fingers` (bool): Whether to use the touch sensors of the fingers. Default: `True`.
+- `touch_arms` (bool): Whether to use the touch sensors of the arms. Default: `True`.
+- `touch_feet` (bool): Whether to use the touch sensors of the feet. Default: `True`.
+- `touch_legs` (bool): Whether to use the touch sensors of the legs. Default: `True`.
+- `touch_body` (bool): Whether to use the touch sensors of the body. Default: `True`.
+- `touch_head` (bool): Whether to use the touch sensors of the head. Default: `True`.
+- `touch_eyes` (bool): Whether to use the touch sensors of the eyes. Default: `False`.
+- `actuation_model` (str): The actuation model to use. Default: `spring_damper`. Options: `spring_damper`, `muscle`, `positional`.
+- `act_hands` (bool): Whether to use the actuation of the hands. Default: `True`.
+- `act_fingers` (bool): Whether to use the actuation of the fingers. Default: `True`.
+- `act_arms` (bool): Whether to use the actuation of the arms. Default: `True`.
+- `act_feet` (bool): Whether to use the actuation of the feet. Default: `True`.
+- `act_legs` (bool): Whether to use the actuation of the legs. Default: `True`.
+- `act_body` (bool): Whether to use the actuation of the body. Default: `True`.
+- `act_head` (bool): Whether to use the actuation of the head. Default: `True`.
+- `act_eyes` (bool): Whether to use the actuation of the eyes. Default: `True`.
+- `lock_hands` (bool): Whether to lock the position of the hands. Default: `False`.
+- `lock_fingers` (bool): Whether to lock the position of the fingers. Default: `False`.
+- `lock_arms` (bool): Whether to lock the position of the arms. Default: `False`.
+- `lock_feet` (bool): Whether to lock the position of the feet. Default: `False`.
+- `lock_legs` (bool): Whether to lock the position of the legs. Default: `False`.
+- `lock_body` (bool): Whether to lock the position of the body. Default: `False`.
+- `lock_head` (bool): Whether to lock the position of the head. Default: `False`.
+- `lock_eyes` (bool): Whether to lock the position of the eyes. Default: `False`.
 
-| Name        | Default          | Options | Description |
-|:------------|:-----------------|:--------|:------------|
-| `save_dir` | | | |
-| `behavior` | | | |
-| `max_episode_steps` | | | |
-| `frame_skip` | | | |
-| `render_size` | | | |
-| `save_logs_every` | | | |
-|:------------|:-----------------|:--------|:------------|
-| `proprio_velocity` | | | |
-| `proprio_torque` | | | |
-| `proprio_limits` | | | |
-| `proprio_actuation` | | | |
-|:------------|:-----------------|:--------|:------------|
-| `vestibular_active` | | | |
-|:------------|:-----------------|:--------|:------------|
-| `vision_active` | | | |
-| `vision_resolution` | | | |
-|:------------|:-----------------|:--------|:------------|
-| `touch_active` | | | |
-| `touch_scale` | | | |
-| `touch_function` | | | |
-| `touch_response` | | | |
-| `touch_hands` | | | |
-| `touch_fingers` | | | |
-| `touch_arms` | | | |
-| `touch_feet` | | | |
-| `touch_legs` | | | |
-| `touch_body` | | | |
-| `touch_head` | | | |
-| `touch_eyes` | | | |
-|:------------|:-----------------|:--------|:------------|
-| `actuation_model` | | | |
-| `act_hands` | | | |
-| `act_fingers` | | | |
-| `act_arms` | | | |
-| `act_feet` | | | |
-| `act_legs` | | | |
-| `act_body` | | | |
-| `act_head` | | | |
-| `act_eyes` | | | |
-| `lock_hands` | | | |
-| `lock_fingers` | | | |
-| `lock_arms` | | | |
-| `lock_feet` | | | |
-| `lock_legs` | | | |
-| `lock_body` | | | |
-| `lock_head` | | | |
-| `lock_eyes` | | | |
+## Initialization
+
+The environment initialization is handled by the ``make_env`` function in the ``babybench.utils`` module. The configuration file is read by BabyBench's XML builder to create the corresponding MIMo environment. This also stores a copy of the configuration file in the ``save_dir`` folder. The XML file will specify the following:
+- MIMo's version (v1 with mitten-like hands, v2 with fingers), which depends on the ``behavior`` parameter,
+- MIMo's initial location and orientation, which depends on the ``scene`` parameter,
+- MIMo's actuation model and the corresponding actuated body parts,
+- The scene (``crib`` or ``cubes``; the ``base`` scene is always loaded).
+
+The other environment parameters are directly passed to MIMo's environment creator during the initialization: ``max_episode_steps``, ``frame_skip``, ``render_size``, and ``save_logs_every``. 
 
 ## Environments
 
-### Self-touch
+The BabyBench environments use the [Gymnasium](https://gymnasium.farama.org/api/) API. After initializing the environment, users can reset the environment using the ``env.reset()`` method, which returns the observation and information dictionaries. To perform an action, users can use the ``env.step(action)`` method, which takes the action as input and returns the following:
+- the observation dictionary, detailed below,
+- the reward, which is always 0,
+- the terminated flag, which is always ``False``,
+- the truncated flag, which is True if the episode reaches the maximum number of steps,
+- the information dictionary, which depends on the behavior.
 
-### Hand regard
+The information dictionary contains, by default, only the number of timesteps. When using the ``self_touch`` behavior, the information dictionary also contains the a history of the body parts touched by the left and right hands. When using the ``hand_regard`` behavior, the information dictionary also contains the fraction of timesteps where each hand is in the field of view of each eye.
 
 ## Sensory observations
 
+MIMo has four sensory modules: proprioception, vestibular system, vision, and touch. These are returned as a dictionary when resetting or stepping the environment. Details of MIMo's sensory modules are provided in [MIMo's documentation](https://mimo.readthedocs.io/en/latest/).
+
 ### Proprioception
+
+MIMo's proprioception is accessed as ``obs['observation']``. It contains of a vector with the following values
+- the ``44`` (for MIMo v1) or ``88`` (for MIMo v2) angles of each joint in MIMo's body,
+- the angular velocity of each joint (if ``proprio_velocity`` is ``True``),
+- the torque applied to each joint (if ``proprio_torque`` is ``True``),
+- the limits of each joint (if ``proprio_limits`` is ``True``),
+- the actuation control of each joint (if ``proprio_actuation`` is ``True``).
 
 ### Vestibular
 
+MIMo's vestibular observation is accessed as ``obs['vestibular']`` if ``vestibular_active`` is ``True``. It contains a vector with the following values:
+- the 3D linear acceleration of MIMo's head,
+- the 3D angular velocity of MIMo's head.
+
 ### Vision
+
+MIMo's binocular vision observations are accessed as ``obs['eye_left']`` and ``obs['eye_right']`` if ``vision_active`` is ``True``. They contain the RGB images of the left and right eyes, respectively, as arrays with shape ``(vision_resolution, vision_resolution, 3)``, where the resolution is defined in the configuration file. 
 
 ### Touch
 
+MIMo's touch observation is accessed as ``obs['touch']`` if ``touch_active`` is ``True``. It contains a vector with the activation of each touch sensor in MIMo's skin. The total size of the touch vector will depend on the amount of body parts where the touch modality active, as determined in the configuration file. The sensors are uniformly distributed in each geometry primitive of MIMo's body, with a density defined by MIMo's default touch densities and the ``touch_scale`` parameter in the configuration file. Higher values of ``touch_scale`` will result in fewer touch sensors. 
+
+The touch sensors have three supported output functions, defined in the ``touch_function`` parameter in the configuration file:
+- ``normal``: outputs the normal contact force as a scalar.
+- ``force_vector``: outputs the contact force vector (normal and frictional forces) in the coordinate frame of the geometry of the corresponding touch sensor.
+- ``force_vector_global``: Like ``force_vector``, but in the world coordinate frame instead.
+
+The outputs can be spread to nearby sensors in two ways, defined in the ``touch_response`` parameter in the configuration file:
+- ``nearest``: directly adds the output to the nearest sensor and neglects neighbors. 
+- ``spread_linear``: spreads the force to nearby sensor points, with a linear decay with distance to the contact point. The force drops to 0 at twice the sensor scale. The force per sensor is normalized such that the total force is conserved.
+
 ## Actuation models
+
+MIMo has access to three actuation models: the spring-damper model, the muscle model, and the positional model, which you can be set in the configuration file with the ``actuation_model`` parameter. All approaches rely on MuJoCo actuators, but the control and computations differ between them. The actuation models are described in detail in [MIMo's documentation](https://mimo.readthedocs.io/en/latest/). For all actuation models, the dimensions of the action space will depend on the number of active actuators.
 
 ### Spring-damper model
 
+The spring-damper model uses a spring-damper system to model force-length and force-velocity relationships. MIMo's muscles are approximated as torque motors with linear and instantaneous control response. The control range of the actuators is ``[-1, 1]``.
+
 ### Muscle model
+
+The muscle model is a more realistic, but computationally more expensive, actuation model. It is an adaptation of the model of [Wochner et al. (2022)](https://arxiv.org/abs/2207.03952), with parameters tuned to mimic an infant's muscles. Each actuator is internally modeled as two opposing and independently controlled muscles.  The control range of the actuators is ``[-1, 1]``.
 
 ### Positional model
 
-## Evaluation
+The positional model is less realistic but allows users to directly specify the desired joint angles. The control range depends for each actuator and corresponds to its joint movement range.
 
 ## File structure
 
@@ -113,9 +153,6 @@ The BabyBench 2025 starter kit contains the following files and folders:
     - ``intrinsic_motivation_wrapper.py``: a starter code for training a generic policy that uses intrinsic motivations
     - ``intrinsic_selftouch_count.py``: a starter code for training a self-touch policy to maximize the number of touched sensors
     - ``intrinsic_handregard_saliency.py``: a starter code for training a hand regard policy to maximize visual saliency
-    - ``goal_based_wrapper.py``: a starter code for training a generic policy that uses goal-based learning
-    - ``goal_selftouch_sensors.py``: a starter code for training a self-touch policy to maximize the number of touched sensors
-    - ``goal_based_handregard.py``: a starter code for training a hand regard policy to maximize visual saliency
 - ``MIMo``: the MIMo repository
 - ``results``: a folder to store the results of the training and evaluations
     - ``test_installation``: a folder with the results of the installation test (created after running ``test_installation.py``)
@@ -130,7 +167,6 @@ The BabyBench 2025 starter kit contains the following files and folders:
 - ``README.md``: a README file with installation and usage instructions
 - ``requirements.txt``: a list of Python packages required to run the code
 - ``test_installation.py``: a script to test the installation
-
 
 ---
 

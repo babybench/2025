@@ -155,6 +155,16 @@ A full description of MIMo's sensory and actuation modules used in BabyBench can
 - Mattern et al., 2024: [MIMo: A Multimodal Infant Model for Studying Cognitive Development](https://arxiv.org/pdf/2312.04318)
 - Todorov et al., 2012: [MuJoCo: A physics engine for model-based control](https://ieeexplore.ieee.org/abstract/document/6386109/)
 
+
+## Organizing team
+
+- Francisco M. López, Frankfurt Institute for Advanced Studies, Germany
+- Valentin Marcel, Czech Technical University in Prague, Czechia
+- Xavier Hinaut, INRIA Bordeaux, France
+- Jochen Triesch, Frankfurt Institute for Advanced Studies, Germany
+- Matej Hoffmann, Czech Technical University in Prague, Czechia
+
+
 ---
 
 ### [Next page: Installation](../installation)

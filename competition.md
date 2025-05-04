@@ -74,17 +74,13 @@ Although not a primary evaluation criterion, computational efficiency will be co
 
 The goal of this criterion is to encourage solutions that are elegant and accessible, without requiring extensive computational resources. This criterion will be adjusted based on the number of participants and the complexity of each task. We encourage submissions that rely on plausible learning mechanisms that can be run in a reasonable amount of time and memory.
 
-
-
 ## Prizes
 
-The winning team of the BabyBench Competition will receive a **€150 prize, generously sponsored by the IEEE Computational Intelligence Society**. In addition to the monetary award, the winning team will be invited to **present their submission during the IEEE ICDL conference**, offering an opportunity to share their work with a broad interdisciplinary audience.
+The winning team of the BabyBench Competition will receive a **€150 prize, generously sponsored by the IEEE Computational Intelligence Society** and an award  **during the IEEE International Conference on Development and Learning (ICDL)** in Prague, Czechia.
 
-Finalist teams who make it to the final evaluation round will receive honorable mentions in recognition of their contributions. These mentions will be announced during the competition session and highlighted in official competition materials.
+Finalist teams who make it to the final evaluation round will receive honorable mentions in recognition of their contributions. These mentions will be announced during the competition session of the conference.
 
-Our goal is to celebrate creativity, rigor, and developmental insight—whether you win, place, or simply participate, your work helps advance the conversation. We look forward to seeing your innovative approaches and the impact they will have on our understanding of infant learning and development.
-
-
+Our goal is to celebrate creativity and developmental insight – whether you win, place as a finalist, or simply participate, your work helps advance the conversation about infant learning and development. We look forward to seeing your innovative approaches.
 
 ## Rules
 
