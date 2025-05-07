@@ -23,8 +23,10 @@ If you successfully [installed BabyBench](../installation) and ran the installat
 
 You can also run a short evaluation of the installation test:
 ```bash
-python evaluation --config=examples/config_test_installation.yml --episodes=1 --duration=100
+python evaluation.py --config=examples/config_test_installation.yml --episodes=1 --duration=100
 ```
+
+Note that the evaluation script runs, by default, a random policy. You can change the policy by action selection in `èvaluation.py`.
 
 We recommend you to take some time to explore the folder structure ([descrbed here](../api/#file-structure)). Inside the ``results/test_installation`` folder, you will find 2 folders: ``videos`` and ``logs``, and a ``scene.xml`` file (read the [API](../api) page for details). The ``video`` folder should contain the video of the installation test and the video of the evaluation (if you ran it). The ``logs`` folder  should contain a log file called ``training.pkl`` generated during the installation test and a log file called ``evaluation_0.pkl`` generated during the evaluation. These are pickled files; you can open them with the [pickle](https://docs.python.org/3/library/pickle.html) module in Python, for example: 
 
@@ -130,19 +132,11 @@ The ``behavior`` parameter determines the target behavior that will be tracked i
 
 The ``scene`` parameter determines the scene that will be used in the environment. Each scene has specific objects and introduces different constraints, such as fixing MIMo to a specific pose. This parameter can be set to ``base``, ``crib`` or ``cubes``. Examples of each scene are shown below. While both behaviors can be learned in eaither scene, we recommend using the ``crib`` scene for self-touch and the ``cubes`` scene for hand regard.
 
-<figure>
-    <img src="static/images/base_scene.png" alt="Base scene">
-    <figcaption>Base scene</figcaption>
-</figure>
-
-<figure>
-    <img src="static/images/crib_scene.png" alt="Crib scene">
-    <figcaption>Crib scene</figcaption>
-</figure>
-
-<figure>
-    <img src="static/images/base_scene.png" alt="Cubes scene">
-    <figcaption>Cubes scene</figcaption>
+<figure style="text-align: center;">
+    <img src="../static/images/scene_base.png" alt="Base scene" width="200">
+    <img src="../static/images/scene_crib.png" alt="Crib scene" width="200">
+    <img src="../static/images/scene_cubes.png" alt="Cubes scene" width="200">
+    <figcaption>Starting positions in base, crib, and cubes scenes</figcaption>
 </figure>
 
 #### Sensory modules
@@ -255,18 +249,6 @@ def compute_intrinsic_reward(self, obs):
 ```
 
 Again, you can come up with a better intrinsic rewards to explain the emergence of hand regard. We encourage you to try different approaches and make a submission to the competition.
-
-
-### Goal-based
-
-#### Template
-{: .no_toc }
-
-#### Self-touch
-{: .no_toc }
-
-#### Hand regard
-{: .no_toc }
 
 ---
 

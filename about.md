@@ -158,12 +158,16 @@ A full description of MIMo's sensory and actuation modules used in BabyBench can
 
 ## Organizing team
 
-- Francisco M. López, Frankfurt Institute for Advanced Studies, Germany
-- Valentin Marcel, Czech Technical University in Prague, Czechia
-- Xavier Hinaut, INRIA Bordeaux, France
-- Jochen Triesch, Frankfurt Institute for Advanced Studies, Germany
-- Matej Hoffmann, Czech Technical University in Prague, Czechia
+- [Francisco M. López](https://scholar.google.com/citations?user=pNDeaeQAAAAJ), Frankfurt Institute for Advanced Studies, Germany
+- [Valentin Marcel](https://scholar.google.com/citations?user=BbCeJhoAAAAJ), Czech Technical University in Prague, Czechia
+- [Xavier Hinaut](https://scholar.google.com/citations?user=pNW4eZAAAAAJ), INRIA Bordeaux, France
+- [Jochen Triesch](https://scholar.google.com/citations?user=AgEdsugAAAAJ), Frankfurt Institute for Advanced Studies, Germany
+- [Matej Hoffmann](https://scholar.google.com/citations?user=KFUbXYYAAAAJ), Czech Technical University in Prague, Czechia
 
+## Acknowledgements
+
+BabyBench is supported by the cluster project ``The Adaptive Mind'' funded by the Excellence Program of the Hessian Ministry of Higher Education, Research, Science and the Arts, Germany, by the Deutsche Forschungsgemeinschaft (DFG project “Abstract REpresentations in Neural Architectures (ARENA)”), by the Czech Science Foundation (GA
+CR), Project no. 25-18113S, and by the Johanna Quandt foundation.
 
 ---
 

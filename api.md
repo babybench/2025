@@ -86,7 +86,9 @@ The other environment parameters are passed directly to MIMo's environment creat
 
 ### Base
 
-The `base` scene is always loaded. It determined the main physical and rendering configuration. In particular it sets the timestep duration to `0.005` seconds, which is the default value for MIMo, and other MuJoCo solver parameters to the following:
+<img src="../static/images/scene_base.png" alt="Base scene" width="360">
+
+The `base` scene is always loaded. It determines the main physical and rendering configuration. In particular it sets the timestep duration to `0.005` seconds, which is the default value for MIMo, and other MuJoCo solver parameters to the following:
 - `iterations="50"`,
 - `tolerance="1e-10"`,
 - `solver="Newton"`,
@@ -100,9 +102,13 @@ In the ``base`` scene, MIMo is fully free to move.
 
 ### Crib
 
+<img src="../static/images/scene_crib.png" alt="Crib scene" width="360">
+
 The `crib` scene loads a crib with a mattress, on top of which MIMo is placed. The crib and mattress are fixed and cannot be moved. MIMo's ``lower_body`` is fixed to the mattress of the crib, meaning that he can move his limbs, head, and torso, but he cannot leave his position. MIMo cannot reach the rails of the crib with his hands or feet. The `friction`parameters of the mattress are reduced to 1/10 of the default MuJoCo friction values. Touches with the mattress are still registered, but the contact forces are reduced.
 
 ### Cubes
+
+<img src="../static/images/scene_cubes.png" alt="Cubes scene" width="360">
 
 The ``cubes`` scene loads some colorful cubes and balls distributed around MIMo. All these objects have free joints, so they can be picked up and moved. MIMo's body is fixed to the ground, and the angles `hip_bend1`, `hip_lean1`, `hip_rot1`, `hip_bend2`, `hip_lean2`, `hip_rot2`, `head_tilt`, `head_tilt_side`, `right_hip1`, `right_hip2`, `right_hip3`, `right_knee`, `left_hip1`, `left_hip2`, `left_hip3` and `left_knee` are all locked to fixed values such that MIMo is always sitting. He can move his arms and hands, he can rotate his head, and he can move his eyes. From his sitting position, MIMo can reach some of the cubes and balls with his hands.
 
@@ -207,6 +213,66 @@ The positional model is less realistic but allows users to directly specify the 
 
 ## Evaluation
 
+Users can evaluate their models using the ``evaluation.py`` script, which loads a MIMo environment using the XML file generated during the training. The script also creates an instance of the ``Evaluation`` class from the `babybench/eval.py` file, which contains methods to evaluate the achievement of the training and the performance of a learned policy.
+
+In order to evaluate the performance of a learned policy, users need to modify the `evaluation.py` script to modify the action selection, which is by default set to a random policy:
+
+```python
+action = env.action_space.sample()
+```
+
+Alternatively, users can import the evaluation code in their own scripts. To do so, they need to import the evaluation class of the corresponding behavior, as selected in the configuration file. The evaluation class also requires the environment `env`,  a `render` flag to define whether the evaluation episodes should be rendered into videos, and the saving directory `save_dir`. 
+
+```python
+import babybench.eval as bb_eval
+
+evaluation = bb_eval.EVALS[config['behavior']](
+    env=env,
+    render=True,
+    save_dir=config['save_dir'],
+)
+```
+
+### Training
+
+The training logs generated while training can be evaluated as follows:
+```python
+evaluation.eval_logs()
+```
+
+This loads the pickled file ``save_dir/logs/training.pkl``, which contains a dictionary with the information collected from every training episode. An analysis of the training logs is performed, depending on each behavior, returning a preliminary achievement score.
+
+#### Self-touch
+{: .no_toc }
+
+The evaluation of the self-touch training logs counts the percentage of unique body parts touched by each hand during the last up to 10,000 episodes. The preliminary achievement score is computed as:
+
+![Hand-regard preliminary achievement score](../static/images/equation_selftouch.png)
+
+#### Hand-regard
+{: .no_toc }
+
+The evaluation of the hand-regard training logs counts the percentage of timesteps in which each hand is in the field of view of each eye during the last up to 10,000 episodes. The preliminary achievement score is computed as:
+
+![Hand-regard preliminary achievement score](../static/images/equation_handregard.png)
+
+
+### Learned behavior
+
+The behaviors can be evaluated by running the BabyBench environment with the learned policy and performing an evaluation step after every environment step:
+
+```python
+obs, _, _, _, info = env.step(action)
+evaluation.eval_step(info)
+```
+
+At the end of the episode, the evaluation needs to be ended:
+
+```python
+evaluation.end(episode=0)
+```
+
+The episode number is set to 0 by default but can be any integer. The evaluation stores a dictionary in the `save_dir/logs/evaluation_0.pkl` file with the body positions (`qpos` key) and the information (`info ` key) at each timestep of the evaluation episode. If the `render` flag is set to `True`, the evaluation also renders the episode into a video file in the `save_dir/videos` folder.
 
 
 ## File structure

@@ -39,5 +39,31 @@ The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 C
 
 ---
 
+<p align="center">
+<a href="https://icdl2025.fel.cvut.cz/">
+<img align="center" src="static/images/icdl.png" alt="IEEE International Conference on Development and Learning" width="200"/>
+</a>
+</p>
+<p align="center">
+<a href="https://fias.uni-frankfurt.de/en">
+<img align="center" src="static/images/fias.png" alt="Frankfurt Institute for Advanced Studies" width="200" height="100"/> 
+</a>
+&nbsp;
+<a href="https://www.cvut.cz/en">
+<img align="center" src="static/images/cvut.jpg" alt="Czech Technical University in Prague" width="200" height="100"/>
+</a>
+</p>
+<p align="center">
+<a href="https://www.inria.fr/en/inria-centre-university-bordeaux">
+<img align="center" src="static/images/inria.jpg" alt="INRIA Bordeaux" width="200" height="100"/>
+</a>
+&nbsp;
+<a href="https://cis.ieee.org">
+<img align="center" src="static/images/cis.png" alt="IEEE International Conference on Development and Learning" width="200"/>
+</a>
+</p>
+
+---
+
 ### [Next page: About](about)
 {: .no_toc }
