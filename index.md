@@ -12,7 +12,7 @@ The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 C
 
 <span>
 [Download the code](https://github.com/babybench/babybench2025_starter_kit.git){: .btn .btn-purple}
-[Make a submission](https://ras.papercept.net/){: .btn }
+[Learn more](about){: .btn }
 </span>
 
 ## Important dates
