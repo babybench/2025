@@ -44,7 +44,7 @@ In short, no. The environments are designed to facilitate the emergence of speci
 
 ## What kind of submission is expected?
 
-You’ll be asked to a 2-page abstract describing your approach, a log file automatically generated during training, and a video of the learned behavior. Details can be found [here](../competition/#submission).
+You’ll be asked to a 2-page abstract describing your approach and the log files automatically generated during training and evaluation. Details can be found [here](../competition/#submission).
 
 ## How will the winner be chosen?
 
@@ -52,7 +52,7 @@ Each submission will be scored out of 10 points, using a mixture of qualitative 
 
 ## What do I get if I win?
 
-The winning team of the BabyBench Competition will receive a **€150 prize** and the opportunity to present their submission during the IEEE ICDL conference. 
+The winning team of the BabyBench Competition will receive a **€150 prize** and will receive a certificate at the IEEE ICDL conference.
 
 ## Can I publish work based on my BabyBench submission?
 

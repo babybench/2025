@@ -7,7 +7,7 @@ nav_order: 1
 # About
 {: .no_toc }
 
-BabyBench is a multimodal benchmark of infant behaviors for developmental artificial intelligence. The BabyBench Competition hosted at IEEE ICDL invites participants to model infant-like learning in simulated environments using MIMo, the multimodal infant model. 
+BabyBench is a Multimodal Benchmark of Infant Behaviors for Developmental Artificial Intelligence. The BabyBench Competition hosted at IEEE ICDL invites participants to model infant-like learning in simulated environments using [MIMo](https://github.com/trieschlab/MIMo), the multimodal infant model.
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -17,9 +17,9 @@ BabyBench is a multimodal benchmark of infant behaviors for developmental artifi
 
 ## Motivation
 
-How do infants develop a sense of self?
+How do infants develop a sense of self? And can AIs also develop a sense of self through similar mechanisms?
 
-The early stages of human development are characterized by rich sensorimotor exploration where infants engage in self-touch, self-reach and spontaneous movements that contribute to body awareness and motor control (Rochat, 1998). These behaviors are observed within the first months of life and are fundamental for the emergence of calibrated proprioception and motor coordination. While infant development has been extensively studied in psychology and neuroscience, replicating these behaviors on humanoid robotic platforms remains a major challenge.
+The early stages of human development are characterized by rich sensorimotor exploration where infants engage in self-touch, self-reach and spontaneous movements that contribute to body awareness and motor control (Rochat, 1998). These behaviors are observed within the first months of life and are fundamental for the emergence of calibrated proprioception and motor coordination. While infant development has been extensively studied in psychology and neuroscience, replicating these behaviors in AI-powered humanoid robots remains a major challenge.
 
 This challenge invites participants to design and implement mechanisms that enable MIMo, a baby-sized humanoid agent equipped with a tactile skin and binocular vision, to autonomously generate **self-touching** and **hand regard** behaviors similar to those seen in human infants. The objective here is to model developmental principles such as learning how to explore, building and exploiting sensorimotor loops and intrinsic motivation that drives actions in human infants (Oudeyer & Smith, 2016). Participants will work within custom-designed MIMo environments. Successful solutions should demonstrate emergent behaviors where the agent discovers, through self-exploration, affordances of movements and refines motor skills without explicitly programmed trajectories.
 
@@ -41,6 +41,7 @@ The first BabyBench Competition focuses on two early behaviors that demonstrate 
 Self-touch behaviors emerge within the first weeks of life and are a crucial form of sensorimotor exploration. Infants frequently touch their face, torso, and limbs, gradually refining their ability to reach and coordinate across the body.
 
 <iframe width="480" height="320" src="../static/videos/selftouch_target.mp4" frameborder="0" allowfullscreen></iframe>
+<small>&nbsp;Video: Czech Technical University in Prague, Czechia.</small>
 
 #### Behavioral insights
 {: .no_toc }
@@ -64,6 +65,7 @@ Tactile feedback from the skin, combined with proprioceptive and motor signals, 
 Typically appearing around 2–3 months of age, hand regard is characterized by infants visually tracking and fixating on their own hands. This behavior marks a shift toward coordinated visual-motor integration.
 
 <iframe width="480" height="320" src="../static/videos/handregard_target.mp4" frameborder="0" allowfullscreen></iframe>
+<small>&nbsp;Video: skeshr, Youtube.</small>
 
 #### Behavioral insights
 {: .no_toc }
@@ -102,7 +104,7 @@ One of the central challenges in reinforcement learning is the balance between e
 
 ### Intrinsic motivations
 
-Intrinsic motivations introduce a more self-driven approach to learning. Inspired by human curiosity, intrinsically motivated agents seek out novelty, surprise, learning progress, or autonomously calibrated skills. This helps them explore more broadly and develop general-purpose skills, even in the absence of extrinsic rewards. For example, curiosity-driven learning is a specific form of intrinsic motivation where an agent seeks out situations that yield new or unexpected information. Like a child poking around to see what happens, a curious agent explores the world not because it has to, but because it wants to reduce uncertainty or discover something novel.
+Intrinsic motivations introduce a more self-driven approach to learning. Inspired by human curiosity, intrinsically motivated agents seek out novelty, surprise, learning progress, empowerment, or autonomously calibrated skills. This helps them explore more broadly and develop general-purpose skills, even in the absence of extrinsic rewards. For example, curiosity-driven learning is a specific form of intrinsic motivation where an agent seeks out situations that yield new or unexpected information. Like a child poking around to see what happens, a curious agent explores the world not because it has to, but because it wants to reduce uncertainty or discover something novel.
 
 #### Recommended reading
 {: .no_toc }
@@ -110,6 +112,7 @@ Intrinsic motivations introduce a more self-driven approach to learning. Inspire
 - Pathak et al., 2017: [Curiosity-driven Exploration by Self-supervised Prediction](https://arxiv.org/abs/1705.05363)
 - Yu et al., 2019: [Unsupervised Visuomotor Control through Distributional Planning Networks](https://arxiv.org/abs/1902.05542)
 - Aubret et al., 2023: [ An Information-Theoretic Perspective on Intrinsic Motivation in Reinforcement Learning: A Survey ](https://www.mdpi.com/1099-4300/25/2/327)
+- Salge et al., 2014: [Changing the Environment Based on Empowerment as Intrinsic Motivation](https://www.mdpi.com/1099-4300/16/5/2789)
 
 ### Open-ended learning
 
@@ -123,21 +126,20 @@ Open-ended learning describes the ability of a system to continually develop new
 - Cartoni et al., 2023: [REAL-X—Robot Open-Ended Autonomous Learning Architecture: Building Truly End-to-End Sensorimotor Autonomous Learning Systems](https://ieeexplore.ieee.org/iel7/7274989/10360134/10132490.pdf)
 
 
-
-
 ### Other developmentally-inspired approaches
 
 Developmental learning takes inspiration from how human infants acquire knowledge and skills over time. Instead of jumping straight into complex tasks, a developmental learner progresses through stages, mastering simpler behaviors first and gradually tackling more complex ones. This scaffolding approach can lead to more robust and transferable learning, and is central to building truly adaptive, long-term learning systems.
 
 **Curriculum learning** involves organizing training experiences in a meaningful sequence—starting with easier tasks and gradually increasing difficulty. Much like a school curriculum, this approach helps learning agents build a strong foundation before facing more challenging problems. When aligned with intrinsic motivation or open-ended goals, it can foster more efficient and stable learning.
 
-**Empowerment** is a lesser-known but powerful concept in intrinsic motivation. It refers to an agent’s drive to place itself in states where it has many options and a high degree of control over the future. In essence, an empowered agent seeks to remain capable and influential—choosing situations where it can make a difference. 
+**Dynamic Field Theory** (DFT) s a framework used to understand how the brain gives rise to behavior through the real-time coordination of large groups of neurons. Behaviors emerge from patterns of brain activity that form and shift as infants interact with their surroundings, allowing the brain to decide what is important and guide attention and action accordingly. 
+
+**Bayesian learning** explain behaviors as the result of the brain making predictions based on past experiences and updating those predictions when new information comes in. In infancy, this means that babies are not just passive observers: they are constantly forming expectations about their environment, even with limited experience. The process of combining prior knowledge with new evidence is central to how infants learn about cause and effect, recognize patterns, and adapt their behavior as they grow.  
 
 #### Recommended reading
 {: .no_toc }
 
 - Narvekar et al., 2020: [Curriculum Learning for Reinforcement Learning Domains: A Framework and Survey](https://arxiv.org/pdf/2003.04960)
-- Salge et al., 2014: [Changing the Environment Based on Empowerment as Intrinsic Motivation](https://www.mdpi.com/1099-4300/16/5/2789)
 
 ## MIMo
 
