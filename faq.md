@@ -52,7 +52,7 @@ Each submission will be scored out of 10 points, using a mixture of qualitative 
 
 ## What do I get if I win?
 
-The winning team of the BabyBench Competition will receive a **€150 prize** and will receive a certificate at the IEEE ICDL conference.
+The winning team of the BabyBench Competition will receive a **€150 prize**. All finalists will receive a certificate at the IEEE ICDL conference.
 
 ## Can I publish work based on my BabyBench submission?
 
