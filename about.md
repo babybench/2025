@@ -168,8 +168,7 @@ A full description of MIMo's sensory and actuation modules used in BabyBench can
 
 ## Acknowledgements
 
-BabyBench is supported by the cluster project ``The Adaptive Mind'' funded by the Excellence Program of the Hessian Ministry of Higher Education, Research, Science and the Arts, Germany, by the Deutsche Forschungsgemeinschaft (DFG project “Abstract REpresentations in Neural Architectures (ARENA)”), by the Czech Science Foundation (GA
-CR), Project no. 25-18113S, and by the Johanna Quandt foundation.
+We thank the IEEE Robotics and Automation Society Technical Committee for Cognitive Robotics for contributing the prize money for the competition. BabyBench is supported by the cluster project ``The Adaptive Mind'' funded by the Excellence Program of the Hessian Ministry of Higher Education, Research, Science and the Arts, Germany, by the Deutsche Forschungsgemeinschaft (DFG project “Abstract REpresentations in Neural Architectures (ARENA)”), by the Czech Science Foundation (GACR), Project no. 25-18113S, and by the Johanna Quandt foundation.
 
 ---
 

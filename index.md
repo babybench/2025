@@ -18,8 +18,13 @@ The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 C
 ## Important dates
 
 - **Submission deadline: September 1, 2025**
-- Finalists announcement: September 15, 2025
 - Winner announcement at ICDL: September 19, 2025
+
+### Why Participate?
+
+* **Winning team will receive a €150 prize**
+* All finalists will receive a certificate at the IEEE ICDL
+* Contribute to the Developmental AI community!
 
 ---
 
@@ -58,8 +63,8 @@ The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 C
 <img align="center" src="static/images/inria.jpg" alt="INRIA Bordeaux" width="200" height="100"/>
 </a>
 &nbsp;
-<a href="https://cis.ieee.org">
-<img align="center" src="static/images/cis.png" alt="IEEE International Conference on Development and Learning" width="200"/>
+<a href="https://www.ieee-ras.org/">
+<img align="center" src="static/images/ieeeras.png" alt="IEEE Robotics and Automation Society" width="200"/>
 </a>
 </p>
 
