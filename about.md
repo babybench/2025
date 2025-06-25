@@ -19,26 +19,28 @@ BabyBench is a Multimodal Benchmark of Infant Behaviors for Developmental Artifi
 
 How do infants develop a sense of self? And can AIs also develop a sense of self through similar mechanisms?
 
-The early stages of human development are characterized by rich sensorimotor exploration where infants engage in self-touch, self-reach and spontaneous movements that contribute to body awareness and motor control (Rochat, 1998). These behaviors are observed within the first months of life and are fundamental for the emergence of calibrated proprioception and motor coordination. While infant development has been extensively studied in psychology and neuroscience, replicating these behaviors in AI-powered humanoid robots remains a major challenge.
+The early stages of human development are characterized by rich sensorimotor exploration where infants engage in self-touch and self-observation like looking at their hands (hand regard). These behaviors are observed within the first months of life and may be fundamental for the learning of the first body schema and the emergence of “sensorimotor self”.
 
-This challenge invites participants to design and implement mechanisms that enable MIMo, a baby-sized humanoid agent equipped with a tactile skin and binocular vision, to autonomously generate **self-touching** and **hand regard** behaviors similar to those seen in human infants. The objective here is to model developmental principles such as learning how to explore, building and exploiting sensorimotor loops and intrinsic motivation that drives actions in human infants (Oudeyer & Smith, 2016). Participants will work within custom-designed MIMo environments. Successful solutions should demonstrate emergent behaviors where the agent discovers, through self-exploration, affordances of movements and refines motor skills without explicitly programmed trajectories.
+This challenge invites participants to design and implement mechanisms that enable MIMo, a baby-sized humanoid agent equipped with a tactile skin and binocular vision, to autonomously generate **self-touch** and **hand regard** behaviors similar to those seen in human infants. The objective here is to model developmental principles such as learning how to explore, building and exploiting sensorimotor loops and intrinsic motivation that drives actions in human infants (Oudeyer & Smith, 2016). Participants will work within custom-designed MIMo environments. Successful solutions should demonstrate emergent behaviors where the agent discovers, through self-exploration, affordances of movements and refines motor skills without explicitly programmed trajectories.
 
-Our aim is to encourage researchers from diverse backgrounds to contribute to the field of developmental artificial intelligence by developing innovative solutions to this challenging problem. We hope that this project will provide a unique opportunity to explore the intersection of machine learning, robotics, and developmental psychology.
+Our aim is to encourage researchers from diverse backgrounds to contribute to the field of developmental robotics and artificial intelligence by developing innovative solutions to this challenging problem. We hope that this project will provide a unique opportunity to explore the intersection of machine learning, robotics, and developmental psychology.
 
 #### Recommended reading
 {: .no_toc }
 
 - Rochat, 1998: [Self-perception and action in infancy](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s002210050550&casa_token=qvuUDsPAEpMAAAAA:QemJo9z91V2U6qtErioDuNJhPcErVSCAW54GTC_AqIukxX0R2I3ap8dI3mUHD2ffI9YrmHWxMYjXB2hiRiY)
 - Oudeyer and Smith, 2016: [How evolution may work through curiosity‐driven developmental process](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/tops.12196)
+- Hoffmann et al. 2010: [Body schema in robotics: a review](http://dx.doi.org/10.1109/TAMD.2010.2086454)
+- Prescott et al., 2024: [Understanding the sense of self through robotics](https://doi.org/10.1126/scirobotics.adn2733)
 
 
 ## Behaviors
 
-The first BabyBench Competition focuses on two early behaviors that demonstrate the emergence of a sense of self in infant development: self-touch and hand regard. These behaviors are not only central to how infants begin to build sensorimotor representations of their own bodies, but also serve as a foundation for more complex cognitive and social capabilities. 
+The first BabyBench Competition focuses on two early behaviors that demonstrate the emergence of a sense of self in infant development: self-touch and hand regard. These behaviors may be central to how infants begin to build sensorimotor representations of their own bodies, and may even also serve as a foundation for more complex cognitive and social capabilities. 
 
 ### Self-touch
 
-Self-touch behaviors emerge within the first weeks of life and are a crucial form of sensorimotor exploration. Infants frequently touch their face, torso, and limbs, gradually refining their ability to reach and coordinate across the body.
+Self-touch behaviors have been observed in the foetus and after birth. They may constitute emerge within the first weeks of life and are a crucial form of sensorimotor exploration. Infants frequently touch their face, torso, and limbs, gradually refining their ability to reach and coordinate across the body.
 
 <iframe width="480" height="320" src="../static/videos/selftouch_target.mp4" frameborder="0" allowfullscreen></iframe>
 <small>&nbsp;Video: Czech Technical University in Prague, Czechia.</small>
@@ -46,19 +48,21 @@ Self-touch behaviors emerge within the first weeks of life and are a crucial for
 #### Behavioral insights
 {: .no_toc }
 
-Self-touch supports the development of body awareness, spatial proprioception, and the formation of a body schema – an internal model of one’s own body. Even in utero, fetuses demonstrate purposeful self-touch, suggesting an early developmental drive for self-directed exploration. Self-touch exploration is not random, but rather evolves throughout development, with infants gradually covering more of their body surface (Khoury et al., 2022).
+Self-touch experience may be a fundamental mechanism to bootstrap the formation of the sensorimotor self and perhaps even beyond.  Frequent self-touch has been documented both before and after birth. Self-touch exploration is not random, but the spatial distribution of touch on the body evolves throughout development (DiMercurio et al. 2018; Thomas et al., 2015; Khoury et al., 2022).
 
 #### Ideas to explore
 {: .no_toc }
 
-Tactile feedback from the skin, combined with proprioceptive and motor signals, can help infants learn the consequences of their own movements. The development of a body schema can be facilitated through self-generated haptic goals, i.e. the expectation of perceiving a touch on a given body part, which can serve as a goal for self-reach (Marcel et al., 2022).  
+The goal is to reproduce the developmental patterns in self-touch like frequency, type, and location of self-contacts across age, along with algorithms that generate these patterns. The family of algorithms of intrinsic motivation, artificial curiosity, and reinforcement learning are candidates to explore. We should also be open to the possibility that the developmental course has been genetically predetermined. Examples tackling this problem of discovering the skin space in an artificial agent are Mannella et al. (2018) and Gama et al. (2023). 
 
 #### Recommended reading
 {: .no_toc }
 
-- Somogyi et al., 2023: [Tactile training facilitates infants' ability to reach to targets on the body](https://srcd.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cdev.13891)
+- DiMercurio et al., 2018: [A naturalistic observation of spontaneous touches to the body and environment in the first 2 months of life](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.02613/full)
 - Khoury et al., 2022: [Self-touch and other spontaneous behavior patterns in early infancy](https://ieeexplore.ieee.org/abstract/document/9962203)
-- Marcel et al., 2022: [Learning to reach to own body from spontaneous self-touch using a generative model](https://ieeexplore.ieee.org/abstract/document/9962186)
+- Thomas et al., 2015: [Independent development of the Reach and the Grasp in spontaneous self-touching by human infants in the first 6 months](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.01526/full)
+- Gama et al. 2023: [Goal-directed tactile exploration for body model learning through self-touch on a humanoid robot](https://doi.org/10.1109/TCDS.2021.3104881)
+- Mannella et al., 2018: [Know Your Body Through Intrinsic Goals](https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2018.00030/full)
 
 ### Hand regard
 
@@ -109,6 +113,8 @@ Intrinsic motivations introduce a more self-driven approach to learning. Inspire
 #### Recommended reading
 {: .no_toc }
 
+- Baldassarre & Mirolli, 2013: [Intrinsically motivated learning in natural and artificial systems](https://link.springer.com/content/pdf/10.1007/978-3-642-32375-1.pdf)
+- Rolf et al., 2010: [Goal babbling permits direct learning of inverse kinematics](https://doi.org/10.1109/TAMD.2010.2062511)
 - Pathak et al., 2017: [Curiosity-driven Exploration by Self-supervised Prediction](https://arxiv.org/abs/1705.05363)
 - Yu et al., 2019: [Unsupervised Visuomotor Control through Distributional Planning Networks](https://arxiv.org/abs/1902.05542)
 - Aubret et al., 2023: [ An Information-Theoretic Perspective on Intrinsic Motivation in Reinforcement Learning: A Survey ](https://www.mdpi.com/1099-4300/25/2/327)
