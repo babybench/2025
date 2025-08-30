@@ -15,8 +15,7 @@ nav_order: 5
 
 ## Important dates
 
-- **Submission deadline: August 15, 2025**
-- Finalists announcement: September 1, 2025
+- **Submission deadline: September 1, 2025**
 - Winner announcement at ICDL: September 19, 2025
 
 
