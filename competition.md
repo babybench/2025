@@ -15,7 +15,7 @@ nav_order: 5
 
 ## Important dates
 
-- **Submission deadline: September 1, 2025**
+- **Submission deadline: ~~September 1, 2025~~ September 8, 2025**
 - Winner announcement at ICDL: September 19, 2025
 
 
