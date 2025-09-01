@@ -17,7 +17,7 @@ The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 C
 
 ## Important dates
 
-- **Submission deadline: September 1, 2025**
+- **Submission deadline: ~~September 1, 2025~~ September 8, 2025**
 - Winner announcement at ICDL: September 19, 2025
 
 ### Why Participate?
