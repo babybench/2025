@@ -35,7 +35,7 @@ The list of parameters that can be defined in the configuration files is the fol
 - `vision_resolution` (*int*): The resolution of the vision. Default: `64`.
 - `touch_active` (*bool*): Whether to use the touch module. Default: `True`.
 - `touch_scale` (*float*): The scale factor for the touch sensors. Default: `1`.
-- `touch_function` (*str*): The activation function to use for the touch sensors. Default: `normal`. Options: `normal`, `force_vector`, `force_vector_global`.
+- `touch_function` (*str*): The activation function to use for the touch sensors. Default: `force_vector`. Options: `force_vector`, `force_vector_global`, `normal_force`
 - `touch_response` (*str*): The spread response to use for the touch sensors. Default: `nearest`. Options: `nearest`, `spread_linear`. 
 - `touch_hands` (*bool*): Whether to use the touch sensors of the hands. Default: `True`.
 - `touch_fingers` (*bool*): Whether to use the touch sensors of the fingers. Default: `True`.
