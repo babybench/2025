@@ -4,6 +4,10 @@ layout: home
 nav_order: 0
 ---
 
+**Thank you for joining the first BabyBench Competition at ICDL 2025 in Prague!** We would greatly appreaciate your feedback. [Click here to fill out a quick survey](https://form.typeform.com/to/pIr3sGm2).
+
+---
+
 # BabyBench 2025 Competition
 
 BabyBench is a Multimodal Benchmark of Infant Behaviors for Developmental Artificial Intelligence. The objective is to teach typical developmental behaviors to [MIMo](https://github.com/trieschlab/MIMo), a multimodal infant model. We provide the embodiment, the simulation environments, and the evaluation metrics; all you need is to implement your ideas.
@@ -11,8 +15,9 @@ BabyBench is a Multimodal Benchmark of Infant Behaviors for Developmental Artifi
 The first **BabyBench Competition** will take place at the [***IEEE* ICDL 2025 Conference**](https://icdl2025.fel.cvut.cz/) in Prague! The topic of this first edition will be *how infants discover their own bodies*. Can you help MIMo learn two typical infant behaviors: [**self touch**](about/#self-touch) and [**hand regard**](about/#hand-regard)? 
 
 <span>
-[Download the code](https://github.com/babybench/babybench2025_starter_kit.git){: .btn .btn-purple}
+[Download the code](https://github.com/babybench/babybench2025_starter_kit.git){: .btn}
 [Learn more](about){: .btn }
+[Feedback form](https://github.com/babybench/babybench2025_starter_kit.git){: .btn .btn-purple}
 </span>
 
 ## Important dates
