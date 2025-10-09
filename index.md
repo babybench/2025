@@ -8,6 +8,14 @@ nav_order: 0
 
 ---
 
+## Results
+
+- **Winner: Lucas Yang (University College London), Daniela Corbetta (The University of Tennessee), and Lorenzo Jamone (University College London)**.
+- Finalist: Magdalena Yordanova (Humboldt University of Berlin).
+- Finalist: Xiaoyi Wu (University of California San Diego).
+
+---
+
 # BabyBench 2025 Competition
 
 BabyBench is a Multimodal Benchmark of Infant Behaviors for Developmental Artificial Intelligence. The objective is to teach typical developmental behaviors to [MIMo](https://github.com/trieschlab/MIMo), a multimodal infant model. We provide the embodiment, the simulation environments, and the evaluation metrics; all you need is to implement your ideas.
