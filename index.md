@@ -10,9 +10,9 @@ nav_order: 0
 
 ## Results
 
-- **Winner: Lucas Yang (University College London), Daniela Corbetta (The University of Tennessee), and Lorenzo Jamone (University College London)**. ![Download certificate](https://drive.google.com/file/d/10xyYQhpakVjv0Q6lY2gMBxJpMs_QNu_B/view?usp=sharing).
-- Finalist: Magdalena Yordanova (Humboldt University of Berlin). ![Download certificate](https://drive.google.com/file/d/19uZ500cgmm7SC0v1uV-Rirh-g8gkYVWI/view?usp=sharing).
-- Finalist: Xiaoyi Wu (University of California San Diego). ![Download certificate](https://drive.google.com/file/d/1qzw19l6TWXJFSDw_0JN6j6U008bbdB6e/view?usp=drive_link).
+- **Winner: Lucas Yang (University College London), Daniela Corbetta (The University of Tennessee), and Lorenzo Jamone (University College London)**. [Download certificate](https://drive.google.com/file/d/10xyYQhpakVjv0Q6lY2gMBxJpMs_QNu_B/view?usp=sharing).
+- Finalist: Magdalena Yordanova (Humboldt University of Berlin). [Download certificate](https://drive.google.com/file/d/19uZ500cgmm7SC0v1uV-Rirh-g8gkYVWI/view?usp=sharing).
+- Finalist: Xiaoyi Wu (University of California San Diego). [Download certificate](https://drive.google.com/file/d/1qzw19l6TWXJFSDw_0JN6j6U008bbdB6e/view?usp=drive_link).
 
 ---
 
